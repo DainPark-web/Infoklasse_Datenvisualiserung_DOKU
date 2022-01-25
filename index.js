@@ -2,20 +2,18 @@ gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline({});
 
 
-const boxL = document.querySelector("#boxlo");
+
 const boxLs = document.querySelectorAll(".boxLink");
 
-// boxL.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     tl.
-//     console.log("fuck");
-// })
 
 
 boxLs.forEach((box) => {
     box.addEventListener("click", (e) => {
         e.preventDefault();
         console.log(e.target.href);
+        if(e.target.href === undefined){
+            window.location.href = "/";
+        }
         tl.to(".boxLink", {
             y: 1000,
             duration: 1,
