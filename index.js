@@ -10,10 +10,14 @@ const boxLs = document.querySelectorAll(".boxLink");
 boxLs.forEach((box) => {
     box.addEventListener("click", (e) => {
         e.preventDefault();
+
+        //error handling 👨‍💻 Ich weiss nicht manchmal bekomme ich undefined als href
         console.log(e.target.href);
         if(e.target.href === undefined){
             window.location.href = "/";
         }
+
+
         tl.to(".boxLink", {
             y: 1000,
             duration: 1,
