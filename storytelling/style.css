@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --bg-color : #191414;
+    --acc-color : #006d77;
+    --font-color : #1ed760;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+body{
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#container{
+    position: relative;
+
+}
+
+
+#content_container{}
+    
+.item_container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: var(--font-color);
+    overflow: hidden;
+}
+
+.item_container:nth-child(1){
+    text-transform: uppercase;
+}
+
+.title_one_container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    overflow: hidden;
+}
+
+.title_two_container{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    overflow: hidden;
+}
+
+.title_text{
+    font-size: calc(7vw + 25px);
+    font-weight: 500;
+    letter-spacing: -5px;
+    
+}
+
+#logoContainer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#logoBox{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#logo{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 350px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1024px-Spotify_logo_with_text.svg.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    
+
+}
+#logoTextContainer{
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top:50%;
+    left: 53%;
+    transform: translate(0%,-50%);
+    font-size: 50px;
+    opacity: 0;
+    /* background: red; */
+    overflow: hidden;
+    line-height: 1;
+}
+#logoTextBox{
+    transform: translateY(0px);
+
+}
+.logoTextLast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    z-index: 3;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--font-color);
+    opacity: 0;
+}
+
+
+.FotoContainer{
+    width: 100%;
+    height: 80vh;
+    /* background: red; */
+    position: absolute;
+    bottom: 0%;
+    overflow: hidden;
+
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.FotoContainer2{
+    width: 200vw;
+    height: 80vh;
+    /* background: red; */
+    position: fixed;
+    bottom: 0%;
+    overflow: hidden;
+
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    transform: translateX(100%);
+}
+.FotoContainer3{
+    width: 100vw;
+    height: 100vh;
+    /* background: red; */
+    position: fixed;
+    bottom: 0%;
+    overflow: hidden;
+
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+    
+    /* transform: skewX(20deg) skewY(-50deg) rotateY(30deg) rotateX(0deg) translateX(130%); */
+}
+.fotoItemContainer{
+    /* background: blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.foto{
+    border-radius: 20px;
+}
+
+
+.fotoItemContainer:nth-child(1) > .foto{
+    background: url(./assets/1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fotoItemContainer:nth-child(2) > .foto{
+    background: url(./assets/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fotoItemContainer:nth-child(3) > .foto{
+    background: url(./assets/3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.foto::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.fotoTitle{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main4{
+    height: 200vh;
+}
+
+.FotoContainer2 >.fotoItemContainer:nth-child(1) > .foto{
+    background: url(./assets/4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer2 >.fotoItemContainer:nth-child(2) > .foto{
+    background: url(./assets/5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer2 >.fotoItemContainer:nth-child(3) > .foto{
+    background: url(./assets/6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer2 >.fotoItemContainer:nth-child(4) > .foto{
+    background: url(./assets/7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer2 >.fotoItemContainer:nth-child(5) > .foto{
+    background: url(./assets/8.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer2 >.fotoItemContainer:nth-child(6) > .foto{
+    background: url(./assets/9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer3 >.fotoItemContainer:nth-child(odd) > .foto{
+    background: url(./assets/10.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.FotoContainer3 >.fotoItemContainer:nth-child(even) > .foto{
+    background: url(./assets/11.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.main6{
+   
+}
