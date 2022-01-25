@@ -9,6 +9,8 @@
 ## Datei Visualisierung
 📍 Location : /dateiv
 
+- Ich habe gelernt, wie man Datei mit CSV visualisieren kann.
+
 ## Storytelling
 📍 Location : /storytelling
 
