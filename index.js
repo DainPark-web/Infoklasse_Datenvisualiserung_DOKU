@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline({});
 
-
+console.log("test");
 const HrefArray =[
     "./zeit/index.html",
     "./dateiv/index.html",
