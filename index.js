@@ -2,21 +2,30 @@ gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline({});
 
 
+const HrefArray =[
+    "./zeit/index.html",
+    "./dateiv/index.html",
+    "./storytelling/index.html"
+]
 
-const boxLs = document.querySelectorAll(".boxLink");
+const boxLs = document.querySelectorAll(".test");
 
-
-
+let lo = "";
 boxLs.forEach((box) => {
     box.addEventListener("click", (e) => {
         e.preventDefault();
 
-        //error handling 👨‍💻 Ich weiss nicht manchmal bekomme ich undefined als href
-        console.log(e.target.href);
-        if(e.target.href === undefined){
-            window.location.href = "/";
+        if(e.target.id === "1"){
+            console.log("d");
+            lo = HrefArray[0]
         }
-
+        if(e.target.id === "2"){
+            lo = HrefArray[1]
+        }
+        if(e.target.id === "3"){
+            lo = HrefArray[2]
+        }
+       
 
         tl.to(".boxLink", {
             y: 1000,
@@ -35,7 +44,7 @@ boxLs.forEach((box) => {
             opacity: 0,
             ease: "power3.out",
             onComplete: function(){
-                window.location.href = e.target.href;
+                window.location.href = lo;
             }
         },0.3)
     })
