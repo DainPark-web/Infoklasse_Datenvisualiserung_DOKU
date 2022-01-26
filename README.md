@@ -88,3 +88,57 @@ var tl1 = gsap.timeline({
 ## Inspiration
 -[01. onStart, onComplete](https://greensock.com/forums/topic/19722-proper-use-of-oncomplete-callback/)<br />
 -[02. onStart, onComplete, => HTML a href](https://greensock.com/forums/topic/17408-open-a-link-after-tweening/)
+
+
+<br>
+Ich mag nicht persönlich JQuery, deswegen weiss ich nicht gut darüber. Allerdings ich vermute, er hat mit Jquery geschrieben, deshalb habe ich wieder als ES6 geschrieben. 
+``` javascript
+
+const HrefArray =[
+    "./zeit/index.html",
+    "./dateiv/index.html",
+    "./storytelling/index.html"
+]
+
+const boxLs = document.querySelectorAll(".test");
+
+let lo = "";
+boxLs.forEach((box) => {
+    box.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if(e.target.id === "1"){
+            console.log("d");
+            lo = HrefArray[0]
+        }
+        if(e.target.id === "2"){
+            lo = HrefArray[1]
+        }
+        if(e.target.id === "3"){
+            lo = HrefArray[2]
+        }
+       
+
+        tl.to(".boxLink", {
+            y: 1000,
+            duration: 1,
+            opacity: 0,
+            scale: 0.3,
+            ease: "power3.out",
+            stagger: {
+                from: "random",
+                amount: 0.2
+            },
+            
+        },0).to("#nav", {
+            yPercent: -100,
+            duration: 1,
+            opacity: 0,
+            ease: "power3.out",
+            onComplete: function(){
+                window.location.href = lo;
+            }
+        },0.3)
+    })
+})
+```
