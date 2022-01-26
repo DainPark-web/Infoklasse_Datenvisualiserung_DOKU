@@ -92,6 +92,7 @@ var tl1 = gsap.timeline({
 
 <br>
 Ich mag nicht persönlich JQuery, deswegen weiss ich nicht gut darüber. Allerdings ich vermute, er hat mit Jquery geschrieben, deshalb habe ich wieder als ES6 geschrieben. 
+
 ``` javascript
 
 const HrefArray =[
