@@ -10,6 +10,18 @@
 📍 Location : /dateiv
 
 - Ich habe gelernt, wie man Datei mit CSV visualisieren kann.
+- Und Ich habe besonders viel über Array gelernt.
+``` javascript
+
+const array = [3,5,2,1,6,8,4];
+array.sort((a, b) => a - b);
+console.log(array);
+// [1,2,3,4,5,6,8]
+
+array.sort((a,b) => b - a);
+console.log(array);
+// [8, 6, 5, 4,3,2,1]
+```
 
 ## Storytelling
 📍 Location : /storytelling
