@@ -3,7 +3,57 @@
 ## Zeit Visualisierung
 📍 Location : /zeit
 
-- Ich habe gelernt, wie man p5.js benutzen kann. Besonders für mich push(), pop() waren interessant
+- Ich habe gelernt, wie man p5.js benutzen kann. Besonders für mich push(), pop() waren interessant.
+``` javascript
+
+    push();
+    //code
+    pop();
+  
+    push();
+    //code
+    pop();
+    
+```
+
+- und Ich habe auch beginShape(), Vertex(), endShape() gelernt.<br />
+-[beginShape](https://p5js.org/reference/#/p5/beginShape)
+``` javascript
+
+beginShape();
+    
+    for(let i = 0; i < h; i++){
+    let r = 350 + sin(i * time / 2) * 20;
+    let x = 0;
+    let y = -r;
+    let a = 30 * i;
+    push();
+    rotate(a);
+
+    
+    let x2 = cos((i - 3) * 30) * r;
+    let y2 = sin((i - 3) * 30) * r;
+  
+    vertex(x2, y2);
+    
+    if(1 <= h2 && h2 <= 12){
+      push();
+      fill(255);
+      circle(x, y, 30);
+      pop();
+    }
+    if(h2 > 12){
+      push();
+      fill(100);
+      noStroke();
+      circle(x, y, 30);
+      pop();
+    }
+    
+    pop();
+  }
+  endShape();
+```
 
 
 ## Datei Visualisierung
