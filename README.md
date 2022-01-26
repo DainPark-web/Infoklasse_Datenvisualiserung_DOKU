@@ -27,8 +27,8 @@ console.log(array);
 - Und Ich wollte auch selbst CSV file parsing machen, deswegen habe ich auch probiert.
 Für mich habe ich dafür Github gist benutzt
 1. export CSV file und diese Datei kann ich im Github hochladen
-2. und danach wenn ich RAQ klicken dann bekomme ich LINK
-Result
+2. und danach wenn ich RAW klicken dann bekomme ich den LINK
+Result<br />
 -[RESULT wie man CSV FIEL als Link bekommen kann](https://gist.githubusercontent.com/DainPark-web/ec078c35b17aaa7058c2ece82a79bee5/raw/gistfile1.txt)
 
 ## Storytelling
