@@ -78,7 +78,7 @@ console.log(array);
 Für mich habe ich dafür Github gist benutzt
 1. export CSV file und diese Datei kann ich im Github Gist hochladen
 2. und danach wenn ich RAW klicken dann bekomme ich den LINK für Result<br />
--[RESULT wie man CSV FIEL als Link bekommen kann](https://gist.githubusercontent.com/DainPark-web/ec078c35b17aaa7058c2ece82a79bee5/raw/gistfile1.txt)
+-[RESULT mein CSV file durch URL](https://gist.githubusercontent.com/DainPark-web/ec078c35b17aaa7058c2ece82a79bee5/raw/gistfile1.txt)
 
 ## Storytelling
 📍 Location : /storytelling
