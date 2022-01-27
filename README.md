@@ -72,7 +72,7 @@ array.sort((a,b) => b - a);
 console.log(array);
 // [8, 6, 5, 4,3,2,1]
 ```
-
+-[Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 - Und Ich wollte auch selbst CSV file parsing machen, deswegen habe ich auch probiert.
 Für mich habe ich dafür Github gist benutzt
