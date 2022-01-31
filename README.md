@@ -200,3 +200,7 @@ boxLs.forEach((box) => {
     })
 })
 ```
+
+
+
+## SVG Animation mit GSAP
