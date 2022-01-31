@@ -1,0 +1,28 @@
+
+
+
+
+.posFace{
+    width: 100vw;
+    height: 100vh;
+    background-color: tomato;
+}
+
+
+
+/* .cls-1{
+    stroke-dasharray: 100;
+    animation: dashDraw 4s linear infinite;
+}
+@keyframes dashDraw {to {stroke-dashoffset: 200;}} */
+
+/* .cls-1{
+    stroke-dasharray: 2338.5;
+   stroke-dashoffset: 2338.5;
+    animation: dashDraw 4s linear infinite;
+}
+@keyframes dashDraw {to {stroke-dashoffset: 0;}}
+
+.cls-1:hover{
+    opacity: 0.4;
+} */
