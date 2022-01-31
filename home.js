@@ -5,7 +5,8 @@ console.log("test");
 const HrefArray =[
     "./zeit/index.html",
     "./dateiv/index.html",
-    "./storytelling/index.html"
+    "./storytelling/index.html",
+    "./svgAnimation/index.html"
 ]
 
 const boxLs = document.querySelectorAll(".test");
@@ -24,6 +25,9 @@ boxLs.forEach((box) => {
         }
         if(e.target.id === "3"){
             lo = HrefArray[2]
+        }
+        if(e.target.id === "4"){
+            lo = HrefArray[3]
         }
        
 
