@@ -5,7 +5,7 @@
 1. [Zeit_Visualisierung](#Zeit_Visualisierung)
 2. [Datei_Visualisierung](#Datei_Visualisierung)
 3. [Storytelling](#Storytelling)
-4. [SVG_Animation_mit_GSAP](#SVG_Animation_mit_GSAP)
+4. [SVG_Animation](#SVG_Animation)
 
 <br>
 
