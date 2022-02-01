@@ -6,7 +6,7 @@ const HrefArray =[
     "./zeit/index.html",
     "./dateiv/index.html",
     "./storytelling/index.html",
-    "./svgAnimation/index.html"
+    "./svgAnimation/svg.html"
 ]
 
 const boxLs = document.querySelectorAll(".test");
