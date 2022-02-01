@@ -4,8 +4,8 @@ var tl = gsap.timeline({});
 console.log("test");
 const HrefArray =[
     "./zeit/index.html",
-    "./svgAnimation/svg.html",
-    "./svgAnimation/svg.html",
+    "./dateiv/index.html",
+    "./storytelling/index.html",
     "./svgAnimation/svg.html"
 ]
 
