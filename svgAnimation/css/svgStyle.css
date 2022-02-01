@@ -8,6 +8,26 @@
     transform-origin: center;
     /* transform: rotate(45deg);   */
 }
+.tukmain{
+    transition: 0.4s ease-in-out;
+}
+.tuk{
+    height: 30px;
+    fill: none;
+    stroke-miterlimit:10;
+    stroke-width:13px;
+    stroke: #000;
+    opacity: 1;
+}
+
+.tukCliked{
+    height: 60px;
+    fill: none;
+    stroke-miterlimit:50;
+    stroke-width:80px;
+    stroke: #000;
+    transform: scale(1.02, 1);
+}
 
 .mouthSvg{
     height: 1000px;
