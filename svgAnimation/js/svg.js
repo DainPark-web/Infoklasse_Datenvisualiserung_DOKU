@@ -20,7 +20,7 @@ let eyeR = 20;
 document.addEventListener("mousedown", () => {
     mouth.classList.toggle("newMouth")
     mouth.classList.toggle("mouthSvg");
-
+    
     mouthR.style.fill ="#ff0000"
     mouthL.style.fill ="#fff"
     mouthL.style.r = `${eyeR}`;
@@ -28,6 +28,7 @@ document.addEventListener("mousedown", () => {
 })
 
 document.addEventListener("mouseup", () => {
+   
     mouth.classList.toggle("newMouth")
     mouth.classList.toggle("mouthSvg");
     mouthR.style.fill ="#000"
