@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: tomato;
+    transition: 0.2s ease-in-out;
 }
 .svgFont{
     /* transform-box: fill-box; */
@@ -50,6 +51,21 @@
     transition: 0.4s ease-in-out;
 }
 
+
+
+.faceMain{
+    fill:#000;stroke:none;stroke-miterlimit:10;stroke-width:13px;
+    transition: 0.4s ease-in-out;
+}
+.faceH{
+    fill:#000;stroke:#000;stroke-miterlimit:10;stroke-width:13px;
+    transition: 0.4s ease-in-out;
+}
+
+.eyeMain{
+    fill: #000;
+    transition: 0.4s ease-in-out;
+}
 
 /* .cls-1{
     stroke-dasharray: 100;

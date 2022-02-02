@@ -8,6 +8,9 @@ const mouth = document.querySelector(".cls-2");
 const mouthR = document.querySelector(".eyeR");
 const mouthL = document.querySelector(".eyeL");
 const tuk = document.querySelector(".tuk");
+const faceMain = document.querySelector(".faceMain");
+const faceH = document.querySelectorAll(".faceH");
+const eyeMain = document.querySelectorAll(".eyeMain");
 
 console.log(svgSize.clientWidth);
 let mouseX = 0;
@@ -21,6 +24,7 @@ let eyeR = 20;
 let cliked = false;
 
 // mouthSvg
+
 document.addEventListener("mousedown", () => {
 
     cliked = true;
@@ -35,6 +39,19 @@ document.addEventListener("mousedown", () => {
     mouthR.style.r = `${eyeR}`;
     mouthL.style.cx = `${419} `;
     mouthR.style.cx = `${50 }`;
+
+    svgSize.style.background ="black";
+
+    faceMain.style.fill = "#fff";
+
+    faceH.forEach((e) => {
+        e.style.stroke = "#fff";
+    })
+
+    eyeMain.forEach((e) => {
+        e.style.fill = "#fff"
+    })
+    
 })
 
 document.addEventListener("mouseup", () => {
@@ -50,6 +67,17 @@ document.addEventListener("mouseup", () => {
     mouthL.style.cx = `50`;
     mouthR.style.cx = `419`;
     tuk.style.stroke = "#000";
+    svgSize.style.background ="tomato";
+
+    faceMain.style.fill = "#000";
+
+    faceH.forEach((e) => {
+        e.style.stroke = "#000";
+    })
+
+    eyeMain.forEach((e) => {
+        e.style.fill = "#000"
+    })
 })
 
 document.addEventListener("mousemove", (e) => {
