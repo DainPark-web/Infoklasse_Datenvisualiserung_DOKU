@@ -154,13 +154,8 @@ document.addEventListener("mousemove", (e) => {
     faceM.setAttribute("transform", `translate(${mouseX}, ${mouseY}) scale(1)`)
     faceL.setAttribute("transform", `translate(${100 + (mouseX /2.2)}, ${150 + (mouseY /4)})`)
     faceC.setAttribute("transform", `translate(${170 + (mouseX /1.5)}, ${280 + (mouseY/3)})`)
-    
-    
     svgFont.setAttribute("transform", `translate(${-550 + mouseX}, ${100 + mouseY}) scale(0.2) `)
     
-
-    
-    // console.log(faceM.getAttribute("transform"));
 })
 
 let moveUpDown = 0;
