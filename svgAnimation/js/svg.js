@@ -12,6 +12,14 @@ const faceMain = document.querySelector(".faceMain");
 const faceH = document.querySelectorAll(".faceH");
 const eyeMain = document.querySelectorAll(".eyeMain");
 
+
+
+//key
+const mouseL = document.querySelector(".mouseL");
+const keyZ = document.querySelector(".keyZ");
+const keyX = document.querySelector(".keyX");
+const keyC = document.querySelector(".keyC");
+
 console.log(svgSize.clientWidth);
 let mouseX = 0;
 let mouseY = 0;
@@ -51,6 +59,9 @@ document.addEventListener("mousedown", () => {
     eyeMain.forEach((e) => {
         e.style.fill = "#fff"
     })
+
+    //key
+    mouseL.style.opacity = "0.4";
     
 })
 
@@ -77,6 +88,59 @@ document.addEventListener("mouseup", () => {
 
     eyeMain.forEach((e) => {
         e.style.fill = "#000"
+    })
+    keyZ.style.opacity = "1"
+    keyX.style.opacity = "1"
+    keyC.style.opacity = "1"
+    //key
+    mouseL.style.opacity = "1";
+    document.addEventListener("keydown", (e) => {
+        if(e.keyCode === 90){
+            keyZ.style.opacity = "0.4"
+            keyX.style.opacity = "1"
+            keyC.style.opacity = "1"
+
+            mouthL.style.r = `50`;
+            mouthR.style.r = `50`;
+
+            eyeMain.forEach((e) => {
+                e.style.fill = "rgba(0,0,0,0)"
+            })
+            faceH.forEach((e) => {
+                e.style.stroke = "#000";
+            })
+        }
+
+        if(e.keyCode === 88){
+            keyZ.style.opacity = "1";
+            keyX.style.opacity = "0.4"
+            keyC.style.opacity = "1"
+
+            mouthL.style.r = `10`;
+            mouthR.style.r = `10`;
+
+            eyeMain.forEach((e) => {
+                e.style.fill = "#000"
+            })
+            faceH.forEach((e) => {
+                e.style.stroke = "#000";
+            })
+        }
+        if(e.keyCode === 67){
+            keyZ.style.opacity = "1";
+            keyX.style.opacity = "1"
+            keyC.style.opacity = "0.4"
+
+            mouthL.style.r = `50`;
+            mouthR.style.r = `50`;
+
+            eyeMain.forEach((e) => {
+                e.style.fill = "#000"
+            });
+            faceH.forEach((e) => {
+                e.style.stroke = "#ffff00";
+            })
+        }
     })
 })
 
