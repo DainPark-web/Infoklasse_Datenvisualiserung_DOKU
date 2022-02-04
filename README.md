@@ -213,8 +213,6 @@ boxLs.forEach((box) => {
 
 
 ## SVG_Animation
-📍 Location : /svgAnimation
-
 
 ```javascript
 ...
