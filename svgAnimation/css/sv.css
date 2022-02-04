@@ -63,9 +63,7 @@ body{
     display: flex;
     width: 100%;
     height: 100%;
-   
-   
-    
+    flex-direction: column;
 }
 .tLogo{
     width: 100%;
@@ -73,6 +71,22 @@ body{
     font-size: 70px;
     font-weight: 600;
     
+}
+
+.index{
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.indexList{
+    margin-top: 20px;
+    font-size: 35px;
+
+}
+
+.indexList > li{
+    list-style-type: none;
 }
 
 .textBox-1{
@@ -96,7 +110,7 @@ body{
     
 }
 .tLink > div{
-    background-color: tomato;
+    
     padding: 10px 20px;
     border: 3px solid black;
     border-radius: 10px;
