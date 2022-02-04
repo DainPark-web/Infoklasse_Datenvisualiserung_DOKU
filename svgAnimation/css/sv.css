@@ -45,6 +45,7 @@ body{
     border: 5px solid black;
     display: flex;
     overflow-wrap: break-word;
+    color: black;
     
 }
 
@@ -76,10 +77,31 @@ body{
 
 .textBox-1{
     display: none;
+    flex-direction: column;
 }
 .textBox-2{
     display: none;
 }
 .textBox-3{
     display: none;
+}
+
+.tLink{
+
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.tLink > div{
+    background-color: tomato;
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.tLink > div:hover{
+    opacity: 0.5;
 }

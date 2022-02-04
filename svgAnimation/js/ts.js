@@ -73,6 +73,16 @@ document.addEventListener("mousedown", () => {
 
 
     //text box
+
+    textContainer.style.border = "5px solid white";
+    textContainer.style.background = "black";
+    textContainer.style.color = "white";
+
+    keyZ.style.background = "#044B94"
+    keyX.style.background = "#044B94"
+    keyC.style.background = "#044B94"
+    keyV.style.background = "#044B94"
+    mouseL.style.background = "#044B94";
     // textBox0.style.display = "none";
     // textBox1.style.display = "none";
     // textBox2.style.display = "none";
@@ -82,6 +92,11 @@ document.addEventListener("mousedown", () => {
 
 document.addEventListener("mouseup", () => {
     cliked = false;
+
+    textContainer.style.border = "5px solid black";
+    textContainer.style.background = "tomato";
+    textContainer.style.color = "black";
+
     mouth.classList.toggle("newMouth")
     mouth.classList.toggle("mouthSvg");
     tuk.classList.toggle("tuk");
@@ -107,8 +122,14 @@ document.addEventListener("mouseup", () => {
     keyZ.style.opacity = "1"
     keyX.style.opacity = "1"
     keyC.style.opacity = "1"
+    keyV.style.opacity = "1"
+    keyZ.style.background = "tomato"
+    keyX.style.background = "tomato"
+    keyC.style.background = "tomato"
+    keyV.style.background = "tomato"
     //key
     mouseL.style.opacity = "1";
+    mouseL.style.background = "tomato";
     
 })
 
@@ -132,7 +153,7 @@ if(!cliked){
     
             textContainer.style.display = "flex";
             textBox0.style.display = "none";
-            textBox1.style.display = "block";
+            textBox1.style.display = "flex";
             textBox2.style.display = "none";
             textBox3.style.display = "none";
         }
