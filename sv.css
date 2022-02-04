@@ -9,6 +9,7 @@ body{
     height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: tomato;
 }
 
 .keyContainer{
@@ -38,7 +39,7 @@ body{
     position: absolute;
     top: 30px;
     right: 30px;
-    width: 30vw;
+    width: 500px;
     height: calc(100vh - 60px);
     background-color: tomato;
     border-radius: 20px;
@@ -107,6 +108,7 @@ body{
     display: flex;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 30px;
     
 }
 .tLink > div{
@@ -118,4 +120,19 @@ body{
 
 .tLink > div:hover{
     opacity: 0.5;
+}
+
+
+.homeText{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#githubLink{
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: black;
+    font-size: 40px;
 }
