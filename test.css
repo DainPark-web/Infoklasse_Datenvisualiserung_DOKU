@@ -81,13 +81,28 @@ body{
 }
 
 .indexList{
-    margin-top: 20px;
-    font-size: 35px;
-
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .indexList > li{
     list-style-type: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.keyTBox{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .textBox-1{
@@ -134,5 +149,10 @@ body{
     bottom: 30px;
     left: 30px;
     color: black;
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#githubLink:hover{
+    opacity: 0.5;
 }
