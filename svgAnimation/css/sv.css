@@ -33,3 +33,53 @@ body{
     border: 5px solid black;
     font-weight: 700;
 }
+
+.textContainer{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30vw;
+    height: calc(100vh - 60px);
+    background-color: tomato;
+    border-radius: 20px;
+    border: 5px solid black;
+    display: flex;
+    overflow-wrap: break-word;
+    
+}
+
+.tTitle{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.textB{
+    padding: 20px;
+}
+
+.textBox-0{
+    font-size: 60px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+   
+   
+    
+}
+.tLogo{
+    width: 100%;
+    overflow-wrap: break-word;
+    font-size: 70px;
+    font-weight: 600;
+    
+}
+
+.textBox-1{
+    display: none;
+}
+.textBox-2{
+    display: none;
+}
+.textBox-3{
+    display: none;
+}

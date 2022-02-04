@@ -19,6 +19,14 @@ const mouseL = document.querySelector(".mouseL");
 const keyZ = document.querySelector(".keyZ");
 const keyX = document.querySelector(".keyX");
 const keyC = document.querySelector(".keyC");
+const keyV = document.querySelector(".keyV");
+
+//textbox
+const textBox0 = document.querySelector(".textBox-0");
+const textBox1 = document.querySelector(".textBox-1");
+const textBox2 = document.querySelector(".textBox-2");
+const textBox3 = document.querySelector(".textBox-3");
+const textContainer = document.querySelector(".textContainer");
 
 console.log(svgSize.clientWidth);
 let mouseX = 0;
@@ -62,6 +70,13 @@ document.addEventListener("mousedown", () => {
 
     //key
     mouseL.style.opacity = "0.4";
+
+
+    //text box
+    // textBox0.style.display = "none";
+    // textBox1.style.display = "none";
+    // textBox2.style.display = "none";
+    // textBox3.style.display = "none";
     
 })
 
@@ -94,55 +109,100 @@ document.addEventListener("mouseup", () => {
     keyC.style.opacity = "1"
     //key
     mouseL.style.opacity = "1";
+    
+})
+
+if(!cliked){
     document.addEventListener("keydown", (e) => {
         if(e.keyCode === 90){
             keyZ.style.opacity = "0.4"
             keyX.style.opacity = "1"
             keyC.style.opacity = "1"
-
+            keyV.style.opacity = "1"
+    
             mouthL.style.r = `50`;
             mouthR.style.r = `50`;
-
+    
             eyeMain.forEach((e) => {
                 e.style.fill = "rgba(0,0,0,0)"
             })
             faceH.forEach((e) => {
                 e.style.stroke = "#000";
             })
+    
+            textContainer.style.display = "flex";
+            textBox0.style.display = "none";
+            textBox1.style.display = "block";
+            textBox2.style.display = "none";
+            textBox3.style.display = "none";
         }
-
+    
         if(e.keyCode === 88){
             keyZ.style.opacity = "1";
             keyX.style.opacity = "0.4"
             keyC.style.opacity = "1"
-
+            keyV.style.opacity = "1"
+    
             mouthL.style.r = `10`;
             mouthR.style.r = `10`;
-
+    
             eyeMain.forEach((e) => {
                 e.style.fill = "#000"
             })
             faceH.forEach((e) => {
                 e.style.stroke = "#000";
             })
+            textContainer.style.display = "flex";
+            textBox0.style.display = "none";
+            textBox1.style.display = "none";
+            textBox2.style.display = "block";
+            textBox3.style.display = "none";
         }
         if(e.keyCode === 67){
             keyZ.style.opacity = "1";
             keyX.style.opacity = "1"
             keyC.style.opacity = "0.4"
-
+            keyV.style.opacity = "1"
+    
             mouthL.style.r = `50`;
             mouthR.style.r = `50`;
-
+    
             eyeMain.forEach((e) => {
                 e.style.fill = "#000"
             });
             faceH.forEach((e) => {
                 e.style.stroke = "#ffff00";
             })
+            textContainer.style.display = "flex";
+            textBox0.style.display = "none";
+            textBox1.style.display = "none";
+            textBox2.style.display = "none";
+            textBox3.style.display = "block";
+        }
+        if(e.keyCode === 86){
+            keyZ.style.opacity = "1";
+            keyX.style.opacity = "1"
+            keyC.style.opacity = "1"
+            keyV.style.opacity = "0.4"
+    
+            mouthL.style.r = `50`;
+            mouthR.style.r = `50`;
+    
+            eyeMain.forEach((e) => {
+                e.style.fill = "#000"
+            });
+            faceH.forEach((e) => {
+                e.style.stroke = "#000000";
+            })
+            textContainer.style.display = "flex";
+            textBox0.style.display = "block";
+            textBox1.style.display = "none";
+            textBox2.style.display = "none";
+            textBox3.style.display = "none";
         }
     })
-})
+}
+
 
 document.addEventListener("mousemove", (e) => {
     
