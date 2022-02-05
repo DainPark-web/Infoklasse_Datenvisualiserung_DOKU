@@ -1,3 +1,5 @@
+//ani
+
 gsap.registerPlugin(ScrollTrigger);
 let mtl = gsap.timeline({});
 
