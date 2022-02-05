@@ -74,8 +74,8 @@ document.addEventListener("mousedown", () => {
 
     //text box
 
-    textContainer.style.border = "5px solid white";
-    textContainer.style.background = "black";
+    // textContainer.style.border = "5px solid white";
+    // textContainer.style.background = "none";
     textContainer.style.color = "white";
 
     keyZ.style.background = "#044B94"
@@ -93,8 +93,8 @@ document.addEventListener("mousedown", () => {
 document.addEventListener("mouseup", () => {
     cliked = false;
 
-    textContainer.style.border = "5px solid black";
-    textContainer.style.background = "tomato";
+    // textContainer.style.border = "5px solid black";
+    // textContainer.style.background = "none";
     textContainer.style.color = "black";
 
     mouth.classList.toggle("newMouth")
@@ -235,7 +235,7 @@ document.addEventListener("mousemove", (e) => {
     faceM.setAttribute("transform", `translate(${mouseX}, ${mouseY}) scale(1)`)
     faceL.setAttribute("transform", `translate(${100 + (mouseX /2.2)}, ${150 + (mouseY /4)})`)
     faceC.setAttribute("transform", `translate(${170 + (mouseX /1.5)}, ${280 + (mouseY/3)})`)
-    svgFont.setAttribute("transform", `translate(${-550 + mouseX}, ${100 + mouseY}) scale(0.2) `)
+    svgFont.setAttribute("transform", `translate(${mouseX}, ${500 + mouseY}) scale(0.2) `)
     
 })
 
@@ -250,6 +250,7 @@ function init(){
     }
     moveUpDown += Math.sin(time/2) * 2;
     faceM.setAttribute("transform", `translate(${mouseX}, ${mouseY + moveUpDown}) scale(1)`);
+    svgFont.setAttribute("transform", `translate(${mouseX-40}, ${500 +mouseY + moveUpDown}) scale(0.2)`);
     window.requestAnimationFrame(init)
 }
 

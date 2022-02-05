@@ -31,16 +31,16 @@ mLinks.forEach((e) => {
         };
 
         mtl.to(".aBox", {
-            duration: 3,
-            y: 500,
+            duration: 1,
+            yPercent: 150,
             ease: "power3.out",
             stagger: {
                 from: "random",
                 amount: 0.2
             },
         },0).to(".textContainer", {
-            xPercent: 130,
-            duration: 2,
+            xPercent: -100,
+            duration: 1,
             ease: "power3.out",
             onComplete: () => window.location.href= locationHref
         }, 0.3)

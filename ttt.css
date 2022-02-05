@@ -40,15 +40,16 @@ body{
 .textContainer{
     position: absolute;
     top: 30px;
-    right: 30px;
-    width: 500px;
+    left: 30px;
+    width: calc(100vw - 60px);
     height: calc(100vh - 60px);
-    background-color: tomato;
-    border-radius: 20px;
-    border: 5px solid black;
+    background-color: none;
+    /* border-radius: 20px; */
+    /* border: 5px solid black; */
     display: flex;
     overflow-wrap: break-word;
     color: black;
+    pointer-events: none;
     
 }
 
@@ -126,6 +127,7 @@ body{
     font-size: 18px;
     font-weight: 600;
     margin-top: 30px;
+    pointer-events:all;
     
 }
 .tLink > div{
@@ -143,13 +145,14 @@ body{
 .homeText{
     margin-top: 50px;
     font-size: 25px;
+    width: 300px;
 }
 
 #githubLink{
     text-decoration: none;
     position: absolute;
     bottom: 30px;
-    left: 30px;
+    right: 30px;
     color: black;
     font-size: 25px;
     font-weight: 600;
