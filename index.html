@@ -11,11 +11,11 @@
 </head>
 <body>
     <div class="keyContainer">
-        <div class="keyBox keyZ"><div>Z</div></div>
-        <div class="keyBox keyX"><div>X</div></div>
-        <div class="keyBox keyC"><div>C</div></div>
-        <div class="keyBox keyV"><div>V</div></div>
-        <div class="keyBox mouseL"><div>MouseL</div></div>
+        <div class="keyBox aBox keyZ"><div>Z</div></div>
+        <div class="keyBox aBox keyX"><div>X</div></div>
+        <div class="keyBox aBox keyC"><div>C</div></div>
+        <div class="keyBox aBox keyV"><div>V</div></div>
+        <div class="keyBox aBox mouseL"><div>MouseL</div></div>
     </div>
     <div class="textContainer">
         <div class="textB textBox-0">
@@ -46,7 +46,7 @@
                 Ich habe versucht durch unterschiedliche Shapes, Sekunden, Minuten und Stunden zu unterscheiden.
 
             </p>
-            <a class="tLink" href="./zeit/index.html"><div>Clike me</div></a>
+            <div class="tLink" ><div id="m1">Clike me</div></div>
         </div>
         <div class="textB textBox-2">
             <div class="tTitle">Datei Visualisierung durch CSV</div>
@@ -55,7 +55,7 @@
                 Aber man muss eingentlich extra einige Methods extra lernen, um CSV Datei zu handeln.
                 In diesem Project habe ich durch ein Arraymethod von Javascript die Datei von CSV sortiert.
             </p>
-            <a class="tLink" href="./dateiv/index.html"><div>Clike me</div></a>
+            <div class="tLink" ><div id="m2">Clike me</div></div>
         </div>
         <div class="textB textBox-3">
             <div class="tTitle">Storytelling</div>
@@ -63,7 +63,7 @@
                 Ich habe GSAP, Magic scroll für das Project probiert. Es ist interessant dadurch zu animieren. Normalerweise muss man viel Mühe geben, um nur mit ES6 zu animieren. 
 
             </p>
-            <a class="tLink" href="./storytelling/index.html"><div>Clike me</div></a>
+            <div class="tLink"><div id="m3">Clike me</div></div>
         </div>
     </div>
     <svg class="posFace" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 814">
@@ -82,7 +82,14 @@
     </svg>
     
 
-    <!-- <img id="layer_1I" src="./testsvg.svg" /> -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="./ts.js"></script>
+    <script src="./gsap.js"></script>
 </body>
 </html>

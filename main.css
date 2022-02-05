@@ -117,7 +117,7 @@ body{
 }
 
 .tLink{
-
+    cursor: pointer;
     text-decoration: none;
     color: black;
     display: flex;

@@ -28,7 +28,7 @@ const textBox2 = document.querySelector(".textBox-2");
 const textBox3 = document.querySelector(".textBox-3");
 const textContainer = document.querySelector(".textContainer");
 
-console.log(svgSize.clientWidth);
+
 let mouseX = 0;
 let mouseY = 0;
 
