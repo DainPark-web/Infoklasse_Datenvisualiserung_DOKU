@@ -39,8 +39,8 @@ mLinks.forEach((e) => {
                 amount: 0.2
             },
         },0).to(".textContainer", {
-            xPercent: -100,
-            duration: 1,
+            xPercent: -50,
+            duration: 2,
             ease: "power3.out",
             onComplete: () => window.location.href= locationHref
         }, 0.3)
