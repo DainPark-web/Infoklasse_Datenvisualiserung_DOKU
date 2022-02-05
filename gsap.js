@@ -25,7 +25,7 @@ mLinks.forEach((e) => {
             locationHref = mHrefs[1]
         }
         if(targetId === "m3"){
-            locationHref = mHrefs[3]
+            locationHref = mHrefs[2]
         };
 
         mtl.to(".aBox", {
